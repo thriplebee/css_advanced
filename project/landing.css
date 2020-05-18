@@ -1,0 +1,168 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styling */
+
+/* Body */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #434d45;
+    color: #fff;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+/* Logo */
+#logo{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border: 2px #fff solid;
+    border-radius: 60%;
+    padding: 20px;
+    background-color: #fff;
+
+    /* Animation */
+    animation: logo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    /* Transition */
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#logo img{
+    margin-top: 14px;
+    width: 100%;
+}
+
+@keyframes logo{
+    0%{
+        transform: scaleX(0) scaleY(0);
+    }
+
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+#logo:hover{
+    background-color: #434d45;
+}
+
+/* Header */
+#showcase{
+    height: 300px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.3em;
+    position: relative;
+    /* Animation */
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#showcase h1 span{
+    height: 250px;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    color: #434d45;
+}
+
+@keyframes heading{
+    0%{
+        top: -200px;
+    }
+
+    100%{
+        top: 60px;
+    }
+}
+
+/* Description */
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#content{
+    position: relative;
+
+    /* Animation */
+    animation: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content{
+    0%{
+        bottom: -500px;
+    }
+
+    100%{
+        bottom: 120px;
+    }
+}
+
+/* Button */
+.btn{
+    display: inline-block;
+    position: relative;
+    top: -70px;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px #fff solid; 
+    opacity: 0;
+    /* Animation */
+    animation: btn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+    /* Transition */
+    transition-property: transform, backgorund-color, color;
+    transition-duration: 1s, 2s, 1s;
+}
+
+@keyframes btn{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+.btn:hover{
+    transform: scaleX(1.15) scaleY(1.15);
+    background-color: #fff;
+    color: #434d45;
+}
+
+/* Media Query */
+@media(max-width:629px){
+    @keyframes content{
+        0%{
+            bottom: -500px;
+        }
+    
+        100%{
+            bottom: 80px;
+        }
+    }
+
+    .btn{
+        top: -50px;
+    }
+}

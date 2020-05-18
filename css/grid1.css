@@ -1,0 +1,20 @@
+/* Basic Styling */
+.container > div{
+    background: #ee3ad6;
+    padding: 10px;
+}
+
+.container > div:nth-child(odd){
+    background: #7255f5;
+}
+
+/* Grid Layout */
+
+.container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* grid-column-gap: 1em;
+    grid-row-gap: 1em; */
+
+    grid-gap: 2em 1em;
+}

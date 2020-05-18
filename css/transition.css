@@ -1,0 +1,43 @@
+/* Basic Styling */
+
+body{
+    background-color: #333;
+}
+
+/* Box - Transition */
+
+.box{
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    /* transition-property: background-color, border-radius, transform; */
+    transition-property: all;
+    transition-duration: 1s;
+    /* transition-delay: 5s, 7s; */
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover{
+    background-color: coral;
+    border-radius: 30%;
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    /* margin: auto auto auto 400px; */
+    opacity: 0.2;
+}
+
+/* 
+background-position
+max-height
+max-width
+padding
+font-size
+font-weigth
+color
+line-height
+border-width
+outline-color
+top
+*/

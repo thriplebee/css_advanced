@@ -1,0 +1,91 @@
+/* Basic Styling */
+
+body{
+    background-color: #333;
+}
+
+/* Box - Animation */
+
+.box{
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    animation-name: sampleanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    /* animation-delay: 5s; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: forwards;
+}
+
+/* Keyframes - With Movements
+
+@keyframes sampleanimation{
+    0%{
+        background-color: #fff;
+        left: 0px;
+        top: 0px;
+        border-radius: 0;
+        opacity: 0.1;
+    }
+    25%{
+        background-color: coral;
+        left: 0px;
+        top: 250px;
+        border-radius: 10%;
+        opacity: 0.3;
+    }
+    50%{
+        background-color: crimson;
+        left: 250px;
+        top: 250px;
+        border-radius: 25%;
+        opacity: 0.6;
+    }
+    75%{
+        background-color: darkorchid;
+        left: 250px;
+        top: 0px;
+        border-radius: 37%;
+        opacity: 0.9;
+    }
+    100%{
+        background-color: #fff;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+} */
+
+/* Keyframes - Without Movements*/
+
+@keyframes sampleanimation{
+    0%{
+        background-color: #fff;
+        border-radius: 0;
+        opacity: 0.1;
+    }
+    25%{
+        background-color: coral;
+        border-radius: 10%;
+        opacity: 0.3;
+    }
+    50%{
+        background-color: crimson;
+        border-radius: 25%;
+        opacity: 0.6;
+    }
+    75%{
+        background-color: darkorchid;
+        border-radius: 37%;
+        opacity: 0.9;
+    }
+    100%{
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: 1;
+    }
+}
